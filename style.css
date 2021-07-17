@@ -1,9 +1,9 @@
 *{  
    box-sizing: border-box;
-   font-family: monospace;
+   font-family: sans-serif;
 }
 body{
-    background-color: black;
+    background-color: rgb(207, 119, 37);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +31,7 @@ form{
 
 }
 form button{
-    background-color:black;
+    background-color:rgb(207, 119, 37);
     border:2px solid white;
     border-radius: 20px;
     color: white;
