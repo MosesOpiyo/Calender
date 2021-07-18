@@ -19,10 +19,6 @@ function checkBlank() {
         return false
     } 
 }
-function checkRadio() {
-    
-
-}
 function checkDate() {
     let day = document.getElementById('day').value
     let month = document.getElementById('month').value
@@ -42,7 +38,11 @@ function checkDate() {
     }
 
 }
-function calculateDay() {
+function checkRadio() {
+    var Male = document.getElementById("male");
+    var Female = document.getElementById("female");
+    var nameMl = ["Kwasi","Kwandwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+    var nameFml = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
     let DD = parseInt(day);
     let MM = parseInt(month);
     
@@ -57,10 +57,20 @@ function calculateDay() {
 
     var birthDay = (((CC/4)-2*CC-1)+((5*YY/4))+((26*(MM+1)/10))+DD)%7;
     var theDay = Math.round(birthDay);
-    return theDay;
 
-    var nameMale = ['Kwasi','Kwadwo','Kwabena','Kwaku', 'Yaw', 'Kofi','Kwame']
+    if(Male.checked == true){
+        alert('you are a male' + nameMl[theDay]);
+       
+    }
+    if(Female.checked == true){
+        alert('you are a female' + nameFml[theDay]);
+    }
+    else{
+        alert('Please check your gender');
+        return false;
+    }
     
     
 
 }
+
