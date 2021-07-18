@@ -48,16 +48,8 @@ function correctMonth() {
     }
 }
 var birthDay = parseInt(Math.round(((CC/4)-2*CC-1)+((5*YY/4))+((26*( userMonth +1)/10))+userDay )%7);
-let numb = parseInt(birthDay)
 
-function checkRadio() {
-    var Male = document.getElementById("male");
-    var Female = document.getElementById("female");
-    var nameMl = ["Kwasi","Kwandwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
-    var nameFml = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
-    
-    
-    let yr = userYear.toString()
+let yr = userYear.toString()
     var d1 = yr[0]
     var d2 = yr[1]
     var d3 = yr[2]
@@ -65,13 +57,15 @@ function checkRadio() {
    
     let CC = parseInt('' + d1 + d2);
     let YY = parseInt('' + d3 + d4);
-    
-    
 
-   
-
+function checkRadio() {
+    var Male = document.getElementById("male");
+    var Female = document.getElementById("female");
+    var nameMl = ["Kwasi","Kwandwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+    var nameFml = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
 
     if(Male.checked == true){
+        let numb = parseInt(birthDay)
         
     
         document.getElementById('output').textContent = "Your Akan name is " + nameMl[numb];
