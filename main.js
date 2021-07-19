@@ -66,9 +66,9 @@ function checkRadio() {
 
     if(Male.checked == true){
         let numb = parseInt(birthDay)
-        
-    
+
         document.getElementById('output').textContent = "Your Akan name is " + nameMl[numb];
+        return false;
     
     }
         
@@ -77,7 +77,7 @@ function checkRadio() {
     
     if(Female.checked == true){
         document.getElementById('output').textContent = "Your Akan name is " + nameFml[numb];
-         
+         return false;
     }
 
     
