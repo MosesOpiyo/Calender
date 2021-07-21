@@ -18,6 +18,9 @@ body{
 h1{
     padding-left: 40px;
 }
+p{
+    padding-left: 40px;
+}
 form{
     padding: 30px 40px;
 }

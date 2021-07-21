@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +9,31 @@
 
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
-        <h1>AKAN</h1>
-        <p>This webpage generates an akan name depending on a user's birthdates and Gender.Find out what your akan name is below</p>
-        <form class="form" id="form" action="#" onsubmit="return checkBlank(),correctDay(),correctMonth(),checkRadio()"> 
-         <h2>Date of Birth</h2>
-         <p>Day <input type="number" class="box" value="" id="dayinput"></p>
-         <p>Month <input type="number" class="box" value="" id="monthinput"></p>
-         <p>Year <input type="number" class="box" value="" id="yearinput"></p>
-         <h2>Gender</h2>
-         <p><input name="gender" type="radio" value="" id ="male">Male</input></p>
-         <p><input name="gender" type="radio" value="" id ="female">Female</input></p>
-         <br>
-         <button onsubmit="" type="submit" id="submit">submit</button>
 
-         <h2>Your akan name is:</h2>
-         <p id="output"></p>
-       
+        <h1>AKAN NAMES</h1>
+        <p>This webpage generates an akan name depending on a user's birthdates and Gender.Find out what your akan name is below</p>
+        <br>
+        <p id="output"></p>
+        <form class="form" id="form" action="#">
+            <h2>Date of Birth</h2>
+            <p>Day <input type="number" class="box" value="" id="day"></p>
+            <p>Month <input type="number" class="box" value="" id="month"></p>
+            <p>Year <input type="number" class="box" value="" id="year"></p>
+            <h2>Gender</h2>
+            <p><input name="gender" type="radio" value="" id="male">Male</input>
+            </p>
+            <p><input name="gender" type="radio" value="" id="female">Female</input>
+            </p>
+            <br>
+            <button type="submit" id="submit" onclick="return masterFunction()">submit</button>
+
         </form>
     </div>
 
     <script src="main.js"></script>
 </body>
+
 </html>
